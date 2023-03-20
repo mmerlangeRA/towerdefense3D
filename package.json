@@ -1,0 +1,33 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gsap": "^3.7.0",
+    "three": "^0.150.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.5.5",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.0.0",
+    "expose-loader": "^2.0.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "worker-loader": "^3.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --hot --config webpack.dev.js",
+    "start:lib": "webpack serve --hot --config webpack-lib.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
+    "build:lib": "webpack --config webpack-lib.prod.js",
+    "build:lib-dev": "webpack --config webpack-lib.dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
